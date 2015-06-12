@@ -62,11 +62,14 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  # Enable provisioning with a shell script. Additional provisioners such as
+  # Enable provisionink with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.berkshelf.enabled = true
+  config.berkshelf.berksfile_path = "./cookbooks/Berksfile"
+
   config.vm.provision "chef_solo" do |chef|
-    chef.add_recipe "nodejs"
+    chef.cookbooks_path = "./cookbooks"
+    chef.run_list = ['col']
   end
 end
