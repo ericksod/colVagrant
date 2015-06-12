@@ -1,7 +1,0 @@
-name             'odin'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
-license          'All rights reserved'
-description      'Installs/Configures odin'
-long_description 'Installs/Configures odin'
-version          '0.1.0'

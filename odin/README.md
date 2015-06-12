@@ -1,42 +1,55 @@
-# odin-cookbook
+# Odin - Cities of Learning
+===========================
 
-TODO: Enter the cookbook description here.
+This is the ReOrg Cities of Learning platform server (otherwise known as Odin), dedicated to serving learning content to youth of all ages in the U.S. It is an isomorphic app powered by React, Fluxible, and Node.js.
 
-## Supported Platforms
+Directory Structure
+===================
+    * /docs
+    * /scripts
+    	* scripts for deployment environment setup
+    * /servers
+    	* /app
+    		* /components
+    		* /pages
+    		* /services
+    		* app.js
+    		* client.js
+    		* main.css
+    		* odin.app.js
+    		* server.js
+    		* start.js
+    	* /dist
+    		* bundle.js
+    		* bundle.js.map
+    	* /integration
+    	* /lib
+    		* /admin
+    		* /auth
+    		* /core
+    		* /dash
+    		* /data
+    		* /research
+    		* errors.js
+    		* routes.[app name].map.js
+    	* /loadtest
+    	* /node_modules
+    	* /protractor
+    	* app-[app-name].js
+    	* config.json
+    	* Gruntfile.js
+    	* gulpfile.js
+    	* version.json
+    * /static
 
-TODO: List your supported platforms.
+Setup/Install
+========
+See [servers](servers/README.md) docs
 
-## Attributes
+Custom Configs
+========
+See Configs in [servers](servers/README.md#configs) docs
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['odin']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
-
-## Usage
-
-### odin::default
-
-Include `odin` in your node's `run_list`:
-
-```json
-{
-  "run_list": [
-    "recipe[odin::default]"
-  ]
-}
-```
-
-## License and Authors
-
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Integration Testing
+========
+See testing instructions in [integration](integation/README.me)

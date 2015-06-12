@@ -1,20 +1,16 @@
-*~
-*#
-.#*
-\#*#
-.*.sw[a-z]
-*.un~
-pkg/
+.idea
+.DS_Store
+servers/.DS_Store
+servers/errors.log
+dump
+node_modules
+npm-debug.log
+dist
+errors.log
 
-# Berkshelf
-.vagrant
-/cookbooks
-Berksfile.lock
+servers/loadtest/locustfile.pyc
+servers/loadtest/reports/*
 
-# Bundler
-Gemfile.lock
-bin/*
-.bundle/*
-
-.kitchen/
-.kitchen.local.yml
+servers/supertest/results/*.json
+servers/supertest/results/*.zip
+servers/supertest/results/*.txt
